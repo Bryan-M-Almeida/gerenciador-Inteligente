@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerenciador de Tarefas Inteligente</h1>
+
+        <form id="formTarefa">
+            <label for="tarefaNome">Nome da Tarefa:</label>
+            <input type="text" id="tarefaNome" placeholder="insira a meta"  required>
+
+            <label for="tarefaData">Data de Entrega:</label>
+            <input type="date" id="tarefaData" required>
+
+            <label for="tarefaUrgencia">Urgência:</label>
+            <select id="tarefaUrgencia">
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+
+        <div id="tarefasLista">
+            <!--Lista de Tarefas-->
+        </div>
+
+        <button id="priorizarTarefas">Priorizar Tarefas</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
